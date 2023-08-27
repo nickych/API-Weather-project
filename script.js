@@ -5,7 +5,6 @@ const daysForecastDiv = document.querySelector(".days-forecast");
 
 const API_KEY = ""; // PUT YOUR API HERE
 
-// Create weather card HTML based on weather data
 const createWeatherCard = (cityName, weatherItem, index) => {
     if(index === 0) {
         return `<div class="mt-3 d-flex justify-content-between">
@@ -35,7 +34,6 @@ const createWeatherCard = (cityName, weatherItem, index) => {
     }
 }
 
-// Get weather details of passed latitude and longitude
 const getWeatherDetails = (cityName, latitude, longitude) => {
     const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
 
