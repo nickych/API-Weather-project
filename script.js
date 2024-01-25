@@ -6,6 +6,7 @@ const daysForecastDiv = document.querySelector(".days-forecast");
 
 const API_KEY = ""; // PUT YOUR API HERE
 
+
 const createWeatherCard = (cityName, weatherItem, index) => {
     if(index === 0) {
         return `<div class="mt-3 d-flex justify-content-between">
